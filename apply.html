@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="">
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apply for a position</h1>
+    <p>Join Our team and help us build a better digital solutions.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Job Application Form</h2>
+      <p>All fields are required except "other Skills".</p>
+      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <div class="form-group">
+          <label for="jobref">Job Refrence Number</label>
+          <input type="text" id="jobref" name="jobref" name="jobref" pattern="[A-Za-z0-9]{5}" title="5 alphanumaric characters" required>
+        </div>
+        <div class="form-group">
+          <label for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname" maxlength="20" patern="[A-Za-z]{1,20}" title="Maximum 20 alphabaric character" required>
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" id="lastname" maxlength="20" pattern="[A-Za-z]{1,20}" title="Maximum 20 alphabaric character" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of birth</label>
+          <input type="date" name="dob" id="dob" required>
+        </div>
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="male" required>Male</label>
+          <label><input type="radio" name="gender" value="female">Female</label>
+          <label><input type="radio" name="gender" value="other">Other</label>
+        </fieldset>
+        <div class="form-group">
+          <label for="street">Street Address</label>
+          <input type="text" name="street" id="street" maxlength="40" required>
+        </div>
+        <div class="form-group">
+          <label for="suburb">Suburb/Town</label>
+          <input type="text" name="suburb" id="suburb" maxlength="40" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <select name="state" id="state" required>
+            <option value="">Please Select</option>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="postcode">Postcode</label>
+          <input type="text" name="postcode" id="postcode" pattern="[0-9]{4}" title="4 digits" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" pattern="[0-9]{8-12}" title="* to 12 digits" required>
+        </div>
+        <fieldset>
+          <legend>Technical Skills</legend>
+          <label><input type="checkbox" name="skills[]" value="html">HTML</label>
+          <label><input type="checkbox" name="skills[]" value="css">CSS</label>
+          <label><input type="checkbox" name="skills[]" value="accessibility">Accessibility</label>
+          <label><input type="checkbox" name="skills[]" value="responsive-design">Responsive Design</label>
+        </fieldset>
+        <div class="form-group">
+          <label for="otehrskills">Other Skills</label>
+          <textarea name="otehrskills" id="otherskills" rows="5" cols="40"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Apply Now">
+          <input type="reset" value="Clear Form">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 {company name}</p>
+  </footer>
+  
+</body>
+</html>
