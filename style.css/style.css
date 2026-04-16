@@ -7,9 +7,14 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: rgb(206, 215, 243);/*ALternatively rgb(128, 179, 179); */
+    background-color: rgb(206, 215, 243);
     padding: 1em;
 }
+
+/*Alternate color options:
+rgb(128, 179, 179)
+lightblue
+*/
 
 body {
     padding: 0;
@@ -68,6 +73,10 @@ main {
 h1, h2 {
     color: rgb(28, 57, 92);
 }
+
+/*Alternate color options:
+darkblue
+*/
 
 table {
         border-collapse: collapse;
