@@ -52,11 +52,13 @@ a:hover {
     font-style: italic;
 }
 
+/*
 input, textarea, fieldset {
-    width: 100%; /*Trying to make them all even*/
+    width: 100%;
     display: flex;
     justify-content: left;
 }
+*/
 
 main {
     width: 80%;
@@ -86,12 +88,16 @@ th {
     font-size: larger;
     padding: 0.5em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 #search {
     width: 50%;
+}
+
+label[for="search"] {
+    padding: 0.25em 1em;
 }
 
 button:active {
