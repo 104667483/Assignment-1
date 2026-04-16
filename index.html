@@ -7,63 +7,72 @@
     <meta name="description" content="Home page for [company name] patients">
     <meta name="keywords" content="private, health, wellbeing, services">
     <title>[Company name] | Home</title>
+    <link rel="stylesheet" href="style.css/style.css">
 </head>
 
 <body>
-    <header id="homepage">
-        <img src="" title="[Company name] logo" alt="[Company name] logo">
-        <h1>[Company name]</h1>
-        <p>[Company slogan]</p>
-
+    <header id="main-header">
+        <div>
+            <img src="" title="[Company name] logo" alt="[Company name] logo">
+        </div>
         <nav>
-            <ul>
-                <li><a href="#homepage">Home</a></li>
-                <li><a href="jobs.html">Available Positions</a></li><!--Altered the wording to look more polished though feel free to change it back-->
+            <ul id="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Available Positions</a></li>
+                <!--Altered the wording to look more polished though feel free to change it back-->
                 <li><a href="apply.html">Apply to Work With Us</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-
-        <p>[Company name] provides the best in current health management services so our patients 
+    </header>
+    <main>
+        <form id="search-box" method="get">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Enter keywords here...">
+            <button type="submit">Search</button> <!--Not functional yet-->
+        </form>
+        <header>
+            <h1>[Company slogan]</h1>
+        </header>
+        <p>[Company name] provides the best in current health management services so our patients
             can manage their health completely stress-free.</p><!--Feel free to improve this company description-->
         <p>Use the <strong>menu</strong> bar at the top of this page to navigate our site, or you can search
-            keywords using the <strong>search box</strong> below to find what you are looking for.</p> <!--Explaining in simple terms for accessibility for elderly users etc.-->
-    </header>
+            keywords using the <strong>search box</strong> below it to find what you are looking for.</p>
+        <!--Explaining in simple terms for accessibility for elderly users etc.-->
 
-    <form method="get">
-        <label for="search">Search:</label>
-        <input type="text" id="search" placeholder="Enter keywords here...">
-        <button type="submit">Search</button> <!--Not functional yet-->
-    </form>
+        <br>
 
-    <section aria-labelledby="customerservice"><!--For accessibility-->
-    <h2 id="customerservice">We're Here to Help You</h2>
-    <p>Call us on 1800 987 987 for any enquiries.</p>
-    <p>Call service availability is included below.</p>
-    <p>You can also enquire <a href="mailto:contact@[Company name].com">via email</a>.</p>
-    <table>
-        <caption>Customer Service Call Times</caption>
-        <thead>
-            <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="5">6am - 10pm</td><!--Cell merging as per assignment description-->
-                <td colspan="2">9am - 5pm</td>
-            </tr>
-        </tbody>
-    </table>
-    </section>
-
-    <footer>
+        <section aria-labelledby="customerservice"><!--For accessibility-->
+            <h2 id="customerservice">We're Here to Help You</h2>
+            <p>Call us on 1800 987 987 for any enquiries.</p>
+            <p>Call service availability is included below.</p>
+            <p>You can also enquire <a href="mailto:contact@[Company name].com">via email</a>.</p>
+            <table>
+                <caption><h3>Customer Service Call Times</h3></caption>
+                <thead>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5">7am - 10pm</td><!--Cell merging as per assignment description-->
+                        <td colspan="2">9am - 5pm</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            
+        </section>
+    </main>
+    <hr>
+    <footer id="footer">
         <h2>Additional Links</h2>
         <p><a href="">Jira</a></p> <!--Add later-->
         <p><a href="https://github.com/104667483/Assignment-1">Github</a></p>
