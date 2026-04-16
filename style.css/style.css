@@ -1,4 +1,11 @@
-/*Colour scheme via chat GPT (Prompt: )
+/*
+filename: style.css
+author:
+created: 15.04.26
+last modified: 17.04.26
+description: index.html, jobs.html, apply.html, about.html
+
+Colour scheme via chat GPT (Prompt: )
 Primary: #2A6F97 — trust, digital, professional
 Secondary: #61A5C2 — clean, friendly
 Accent: #A9D6E5 — soft wellness feel
@@ -45,29 +52,6 @@ a:hover {
     font-style: italic;
 }
 
-#search-box {
-    font-size: larger;
-    padding: 0.5em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#search {
-    width: 50%;
-}
-
-button:active {
-    background-color: #61A5C2; 
-}
-
-button {
-        background-color: #1F2937;
-        border: none;
-        padding: 0.25em 2em;
-        color: white;
-}
-
 input, textarea, fieldset {
     width: 100%; /*Trying to make them all even*/
     display: flex;
@@ -95,6 +79,30 @@ th,td {
 
 th {
         background-color: #A9D6E5; /*Previous colour rgb(206, 215, 243)*/
+}
+
+/*Search box styles*/
+#search-box {
+    font-size: larger;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#search {
+    width: 50%;
+}
+
+button:active {
+    background-color: #61A5C2; 
+}
+
+button {
+        background-color: #1F2937;
+        border: none;
+        padding: 0.25em 2em;
+        color: white;
 }
 
 footer {
