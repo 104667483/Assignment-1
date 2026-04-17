@@ -113,6 +113,52 @@ button {
 footer {
     padding: 2em;
 }
+/* Main site header */
+
+
+/* Inner header container */
+.site-header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.site-logo-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Logo image */
+.site-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Site title */
+.site-brand-text h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    
+    font-weight: 700;
+}
+
+
+
+
 
 @media screen {
     
