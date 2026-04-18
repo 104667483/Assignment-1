@@ -289,7 +289,26 @@ footer {
     clear: both;
 }
 
+footer {
+    background-color: #A9D6E5;
+    color: #1f3554;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
 
+footer p {
+    margin: 0.35rem 0;
+}
+
+footer a {
+    color: #1f3554;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #244a73;
+}
 
 
 
