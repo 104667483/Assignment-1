@@ -22,11 +22,13 @@ Success/highlight: #52B788 — health/growth*/
 }
 
 #main-header {
-    padding: 1em;
-    display: flex;
-    justify-content: space-around;
     width: 100%;
     background-color: #A9D6E5;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 body {
@@ -34,9 +36,19 @@ body {
     margin: 0;
 }
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+    /* Remove old inline-block rule */
 nav ul li {
     list-style: none;
-    display: inline-block;
+    display: block;
 }
 
 nav a {
@@ -312,6 +324,136 @@ footer a:hover {
 
 
 
-@media screen {
-    
+/* =========================
+   RESPONSIVE GLOBAL NAV
+   ========================= */
+
+@media screen and (max-width: 900px) {
+    #main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .site-logo {
+        width: 95px;
+        height: 95px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-header {
+        padding: 1rem 1.2rem;
+    }
+
+    .site-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 0.55rem 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main-header {
+        padding: 0.9rem 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 0.65rem 0.9rem;
+    }
+
+    .site-logo {
+        width: 75px;
+        height: 75px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .jobs-side-panel {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .jobs-listing-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #jobs-main-content {
+        padding: 2rem 1.2rem;
+    }
+
+    .jobs-page-heading {
+        font-size: 1.8rem;
+    }
+
+    .jobs-listing-card {
+        padding: 1.4rem;
+    }
+
+    .jobs-listing-card h2 {
+        font-size: 1.45rem;
+    }
+
+    .jobs-detail-section h3 {
+        font-size: 1.08rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #jobs-main-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .jobs-page-heading {
+        font-size: 1.55rem;
+    }
+
+    .jobs-embedded-note {
+        padding: 0.9rem 1rem;
+        font-size: 0.94rem;
+    }
+
+    .jobs-listing-card {
+        padding: 1.1rem;
+    }
+
+    .jobs-listing-card h2 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .jobs-side-panel {
+        padding: 1rem;
+    }
+
+    .jobs-side-panel h3 {
+        font-size: 1.2rem;
+    }
+
+    .jobs-detail-section h3 {
+        font-size: 1rem;
+    }
 }
