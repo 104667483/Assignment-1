@@ -146,6 +146,30 @@ footer {
     align-items: center;
     gap: 1.3rem;
 }
+.site-brand-text h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #1f4a78;
+    font-weight: 700;
+}
+.site-header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Site subtitle */
+.site-brand-text p {
+    margin: 0.3rem 0 0;
+    color: #5a6f8f;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
 
 .site-logo-link {
     display: inline-flex;
