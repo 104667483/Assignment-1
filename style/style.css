@@ -107,6 +107,10 @@ label[for="search"] {
     padding: 0.25em 1em;
 }
 
+input[id="search"] {
+    border-radius: 0 !important;
+}
+
 button:active {
     background-color: #61A5C2; 
 }
@@ -114,7 +118,7 @@ button:active {
 button {
         background-color: #1F2937;
         border: none;
-        padding: 0.25em 2em;
+        padding: 1em 2em;
         color: white;
 }
 
@@ -160,6 +164,10 @@ button {
     button {
         padding: .25rem 1rem;
         font-size: 1rem;
+    }
+
+    .index-img-container {
+        width: 115%;
     }
 
     .index-h1 {
