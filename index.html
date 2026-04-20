@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home page for [company name] patients">
     <meta name="keywords" content="private, health, wellbeing, services">
-    <title>VitalCare Digital Health | Home</title>
+    <title>Home | VitalCare Digital Health</title>
     <link rel="stylesheet" href="style/style.css">
     <style>
         body {
@@ -36,14 +36,16 @@
             <label for="search">Search:</label>
             <input type="text" id="search" placeholder="Enter keywords here...">
             <button type="submit">Search</button> <!--Not functional yet-->
-        </form>
-        <br>
-        <img src="images/healthcare.webp" alt="Doctor with clipboard during a medical consultation" width="100%"> <!--Sourced from https://unsplash.com/photos/doctor-writing-on-a-patients-chart-8WYkI3cEZm8 -->
+        </form>        
+        <div class="index-img-container">
+            <img id="index-img" src="images/healthcare.webp" alt="Doctor and patient having a medical consultation in a room with natural lighting" width="100%">
+            <!--Sourced from https://unsplash.com/photos/doctor-writing-on-a-patients-chart-8WYkI3cEZm8 -->
+        </div>
         <header>
-            <h1 style="color: #61A5C2; font-size: 3.5em;">[Company slogan]</h1>
+            <h1 class="index-h1" style="line-height: 1; border-left: 5px solid #2b7ca8; padding: .5em;">Building digital solutions that improve patient care and online health services.</h1>
         </header>
-        <p>[Company name] provides the best in current health management services so our patients
-            can manage their health completely stress-free.</p><!--Feel free to improve this company description-->
+        <p>VitalCare provides the best in current health management services so our patients
+            can manage their health completely stress-free.</p>
         <p>Use the menu bar at the top of this page to navigate our site, or you can search
             keywords using the search box below it to find what you are looking for.</p>
         <!--Explaining in simple terms for accessibility for elderly users etc.-->
@@ -55,7 +57,7 @@
             <p>Call us on 1800 987 987 for any enquiries.</p>
             <p>Call service availability is included below.</p>
             <p>You can also enquire <a href="mailto:contact@vitalcarehealth.com">via email</a>.</p>
-            <table>
+            <table id="index-table">
                 <caption><h3>Customer Service Call Times</h3></caption>
                 <thead>
                     <tr>
@@ -75,18 +77,33 @@
                     </tr>
                 </tbody>
             </table>
+            <table id="index-table-small">
+                <caption><h3>Customer Service Call Times</h3></caption>
+                <thead>
+                    <tr>
+                        <th>Weekdays (Mon-Fri)</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7am - 10pm</td>
+                        <td colspan="2">9am - 5pm</td>
+                    </tr>
+                </tbody>
+            </table>
             <br>
             
         </section>
     </main>
     
     <footer>
-        <h2>Additional Links</h2>
-        <p><a href="https://kaitoperera07.atlassian.net/jira/software/projects/WT/summary">Jira</a></p>
-        <p><a href="https://github.com/104667483/Assignment-1">Github</a></p>
-        <p><a href="mailto:contact@vitalcarehealth.com">Email us</a></p>
-        <small>Image courtesy of <a href="https://unsplash.com/@silverkblack">Vitaly Gariev</a> on <a href="https://unsplash.com/photos/doctor-writing-on-a-patients-chart-8WYkI3cEZm8">Unsplash</a>, licensed under Unsplash License</small>
         <p>&copy; 2026 VitalCare Digital Health</p>
+        <p><a href="https://kaitoperera07.atlassian.net/jira/software/projects/WT/summary">Jira</a> | 
+            <a href="https://github.com/104667483/Assignment-1">Github</a> | <a href="mailto:contact@vitalcarehealth.com">Email us</a></p>
+        <small>Image courtesy of <a href="https://unsplash.com/@silverkblack">Vitaly Gariev</a> on 
+            <a href="https://unsplash.com/photos/doctor-writing-on-a-patients-chart-8WYkI3cEZm8">Unsplash</a>, licensed under Unsplash License</small>
     </footer>
 
 </body>
