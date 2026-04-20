@@ -1,0 +1,120 @@
+/*
+filename: style.css
+author:
+created: 15.04.26
+last modified: 17.04.26
+description: index.html, jobs.html, apply.html, about.html
+
+Colour scheme via chat GPT (Prompt: )
+Primary: #2A6F97 — trust, digital, professional
+Secondary: #61A5C2 — clean, friendly
+Accent: #A9D6E5 — soft wellness feel
+Background: #F7FBFC — light and clinical
+Surface/cards: #FFFFFF
+Text: #1F2937 — strong readability
+Success/highlight: #52B788 — health/growth
+*/
+
+* {
+    line-height: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main-header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #A9D6E5;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+a {
+    color: #1F2937;
+}
+
+a:hover {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*
+input, textarea, fieldset {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+*/
+
+main {
+    width: 80%;
+    margin:auto;
+}
+
+h1, h2 {
+    color: #1F2937; /*Previous colour rgb(206, 215, 243)*/
+}
+
+table {
+        border-collapse: collapse;
+}
+
+th,td {
+    padding: .75em 1em;
+    text-align: center;
+    border: 1px solid #1F2937;
+}
+
+th {
+        background-color: #A9D6E5; /*Previous colour rgb(206, 215, 243)*/
+}
+
+/*Search box styles*/
+#search-box {
+    font-size: larger;
+    padding: 0.5em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#search {
+    width: 30%;
+}
+
+label[for="search"] {
+    padding: 0.25em 1em;
+}
+
+button:active {
+    background-color: #61A5C2; 
+}
+
+button {
+        background-color: #1F2937;
+        border: none;
+        padding: 0.25em 2em;
+        color: white;
+}
+
+footer {
+    padding: 2em;
+}
+
+@media screen {
+    
+}
