@@ -185,6 +185,10 @@ footer {
     background-color: transparent;
     padding: 0;
 }
+.site-nav-current {
+    background-color: #1f4a78;
+    color: #ffffff !important;
+}   
 
 /* Site title */
 .site-brand-text h1 {
