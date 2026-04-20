@@ -4,15 +4,8 @@ author:
 created: 15.04.26
 last modified: 17.04.26
 description: index.html, jobs.html, apply.html, about.html
+*/
 
-Colour scheme 
-Primary: #2A6F97 — trust, digital, professional
-Secondary: #61A5C2 — clean, friendly
-Accent: #A9D6E5 — soft wellness feel
-Background: #F7FBFC — light and clinical
-Surface/cards: #FFFFFF
-Text: #1F2937 — strong readability
-Success/highlight: #52B788 — health/growth*/
 * {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,7 +19,7 @@ body {
 
 #main-header {
     width: 100%;
-    background-color: #A9D6E5;
+    background-color: #edf5fb;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -66,23 +59,16 @@ a {
 a:hover {
     font-weight: bold;
     font-style: italic;
+    color: #244a73;
 }
-
-/*
-input, textarea, fieldset {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-}
-*/
 
 main {
     width: 80%;
-    margin:auto;
+    margin: 0 auto;
 }
 
 h1, h2 {
-    color: #1F2937; /*Previous colour rgb(206, 215, 243)*/
+    color: #1f4a78; /*Previous colour rgb(206, 215, 243)*/
 }
 
 table {
@@ -96,15 +82,20 @@ th,td {
 }
 
 th {
-        background-color: #A9D6E5; /*Previous colour rgb(206, 215, 243)*/
+        background-color: #edf5fb; /*Previous colour rgb(206, 215, 243)*/
 }
 
-/*Search box styles*/
+td {
+    background-color: #FFFFFF; /*Maintains visibility with background graphic*/
+}
+
+/*Index page styles*/
+/*Search bar*/
 #search-box {
     font-size: larger;
     padding: 0.5em;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
@@ -116,6 +107,10 @@ label[for="search"] {
     padding: 0.25em 1em;
 }
 
+input[id="search"] {
+    border-radius: 0 !important;
+}
+
 button:active {
     background-color: #61A5C2; 
 }
@@ -123,13 +118,77 @@ button:active {
 button {
         background-color: #1F2937;
         border: none;
-        padding: 0.25em 2em;
+        padding: 1em 2em;
         color: white;
 }
 
-footer {
-    padding: 2em;
+/*Main heading*/
+.index-h1 {
+    font-size: 3.25rem;
 }
+
+/*Image*/
+.index-img-container {
+        width: 125%;
+        margin-left: -12.5%;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+    }    
+
+    #index-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+
+/*Responsive index page*/
+/*Mobile*/
+@media screen and (max-width: 768px){
+    #index-table {
+        display: none; /*Removes table and displays alternate one for mobile users*/
+    }
+
+    #search-box {
+        width: 100vw;
+        flex-shrink: 0;
+    }
+
+    #search {
+        font-size: 1rem;
+        width: 50vw;
+        padding: .25rem 1rem;
+    }
+
+    button {
+        padding: .25rem 1rem;
+        font-size: 1rem;
+    }
+
+    .index-img-container {
+        width: 115%;
+    }
+
+    .index-h1 {
+        font-size: 3rem;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 769px){
+    #index-table-small {
+        display: none; /*Remove alternate table for mobile*/
+    }
+}
+
+/*Laptop and computer displays*/
+@media screen and (min-width: 1080px) {
+    .index-h1 {
+        font-size: 3.5rem;
+    }
+}
+
 /* Main site header */
 
 
@@ -486,6 +545,124 @@ footer a:hover {
     clear: both;
 }
 
+
+/* =========================
+    Css for apply.html
+   ========================= */
+
+#header-h1{
+    margin-bottom: 0;
+}
+#form-heading{
+    text-align: center;
+    margin: 0;
+}
+.form-container{
+    border: 1px solid #A9D6E5;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    background-color: #F7FBFC;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 900px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 0.4rem;
+    font-weight: 600;
+    color: #1f3554;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea{
+    padding: 0.75rem;
+    border: 1px solid #61A5C2;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1f3554;
+    font-size: 0.95rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: #2A6F97;
+    box-shadow: 0 0 0 3px rgba(42, 111, 151, 0.12);
+}
+fieldset{
+    grid-column: span 2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+legend{
+    font-weight: 600;
+    color: #1f3554;
+    padding: 0 0 0.3rem;
+}
+
+.radio-group,
+.skills-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.radio-group label,
+.skill-group label{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.button-group{
+    grid-column: span 2;
+    flex-direction: row;
+    gap:1rem;   
+
+}
+
+.button-group input{
+    border: 1px solid #1f3554;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    min-width: 150px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.button-group input:hover{
+    background-color: #1f3554;
+    color: white;
+    font-weight: 600;
+}
+.Form-section{
+    text-align: center;
+}
+
+
+
 /* =========================
    RESPONSIVE GLOBAL NAV + JOBS
    ========================= */
@@ -532,10 +709,40 @@ footer a:hover {
     .about-content-card {
         width: 100%;
     }
+
+    /* For apply.html */
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .form-container{
+        padding: 1.5rem;
+    }
+    form{
+        grid-template-columns: 1fr;
+    }
+    fieldset,
+    .button-group{
+        grid-column: span 1;
+    }   
+    .form-group{
+        width: 100%;
+    }
+    .button-group{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .button-group input{
+        width: 100%;
+    }
 }
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3422f69b42e98ca81035473da9a71aeb392ba0
 /* Smaller tablets */
 @media screen and (max-width: 768px) {
     #main-header {
@@ -587,16 +794,78 @@ footer a:hover {
     .about-bottom-section h2 {
         font-size: 1.45rem;
     }
+
+    /* For apply.html */
+    .form-container{
+        padding: 1.3rem;
+    }
+
+    form{
+        gap:0.9rem;
+    }
+    label{
+        font-size: 0.9rem;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size: 0.9rem;
+        padding: 0.65rem;
+    }
+    fieldset{
+        font-size: 0.95rem;
+    }
+    .radio-group,
+    .skills-group{
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+     .button-group input{
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
 }
 
 /* Phones */
 @media screen and (max-width: 600px) {
     #main-header {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        justify-content: center;
         gap: 0.8rem;
-        padding: 0.8rem 1rem;
+        padding: 0.9rem 1rem;
+        text-align: center;
+    }
+    .site-header-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .site-brand-text {
+        text-align: center;
+    }
+
+    .site-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .site-brand-text h1 {
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .site-brand-text p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin: 0.2rem 0 0;
     }
 
     .site-logo-link {
@@ -661,30 +930,35 @@ footer a:hover {
     .jobs-detail-section h3 {
         font-size: 1rem;
     }
+<<<<<<< HEAD
     #about-main-content {
         padding: 1.5rem 1rem;
     }
+=======
+>>>>>>> 8d3422f69b42e98ca81035473da9a71aeb392ba0
 
-    .about-page-heading {
-        font-size: 1.55rem;
+    /* For apply.html */
+    h1{
+        font-size: 1.5rem;
     }
-
-    .about-embedded-note {
-        padding: 0.9rem 1rem;
-        font-size: 0.94rem;
+    h2{
+        font-size: 1.2rem;
     }
-
-    .about-content-card,
-    .about-bottom-section {
-        padding: 1.1rem;
-    }
-
-    .about-side-panel {
+    .form-container{
         padding: 1rem;
     }
+<<<<<<< HEAD
 
     .about-side-panel h3 {
         font-size: 1.2rem;
+=======
+    .button-group{
+        gap: 0.6rem;
+    }
+    .button-group input{
+        font-size: 0.85rem;
+    }
+>>>>>>> 8d3422f69b42e98ca81035473da9a71aeb392ba0
 }
 
 /* Very small phones */
@@ -734,4 +1008,51 @@ footer a:hover {
         font-size: 0.92rem;
         line-height: 1.6;
     }
+
+    /* For apply.html */
+    main{
+        width: 95%;
+        padding: 0;
+    }
+    .form-container{
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    label{
+        font-size: 0.85rem;
+    }
+    input,
+    select,
+    textarea{
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+    fieldset{
+        padding: 0.7rem;
+    }
+    legend{
+        font-size: 0.9rem;
+    }
+    .radio-group,
+    .skills-group{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+     .button-group{
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    .button-group input{
+            width: 100%;
+            font-size: 0.85rem;
+            padding: 0.7rem;
+    }
+
 }
