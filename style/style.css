@@ -1,0 +1,459 @@
+/*
+filename: style.css
+author:
+created: 15.04.26
+last modified: 17.04.26
+description: index.html, jobs.html, apply.html, about.html
+
+Colour scheme 
+Primary: #2A6F97 — trust, digital, professional
+Secondary: #61A5C2 — clean, friendly
+Accent: #A9D6E5 — soft wellness feel
+Background: #F7FBFC — light and clinical
+Surface/cards: #FFFFFF
+Text: #1F2937 — strong readability
+Success/highlight: #52B788 — health/growth*/
+* {
+    box-sizing: border-box;
+}
+* {
+    line-height: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main-header {
+    width: 100%;
+    background-color: #A9D6E5;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+    /* Remove old inline-block rule */
+nav ul li {
+    list-style: none;
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+a {
+    color: #1F2937;
+}
+
+a:hover {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*
+input, textarea, fieldset {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+*/
+
+main {
+    width: 80%;
+    margin:auto;
+}
+
+h1, h2 {
+    color: #1F2937; /*Previous colour rgb(206, 215, 243)*/
+}
+
+table {
+        border-collapse: collapse;
+}
+
+th,td {
+    padding: .75em 1em;
+    text-align: center;
+    border: 1px solid #1F2937;
+}
+
+th {
+        background-color: #A9D6E5; /*Previous colour rgb(206, 215, 243)*/
+}
+
+/*Search box styles*/
+#search-box {
+    font-size: larger;
+    padding: 0.5em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#search {
+    width: 30%;
+}
+
+label[for="search"] {
+    padding: 0.25em 1em;
+}
+
+button:active {
+    background-color: #61A5C2; 
+}
+
+button {
+        background-color: #1F2937;
+        border: none;
+        padding: 0.25em 2em;
+        color: white;
+}
+
+footer {
+    padding: 2em;
+}
+/* Main site header */
+
+
+/* Inner header container */
+.site-header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.site-logo-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Logo image */
+.site-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Site title */
+.site-brand-text h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    
+    font-weight: 700;
+}
+/* Main jobs page container */
+#jobs-main-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+    background-color: #ffffff;
+    line-height: 1.75;
+    overflow: hidden; /* contains floated aside */
+}
+
+/* Intro section spacing */
+.jobs-intro-section {
+    margin-bottom: 2rem;
+}
+
+/* Main heading */
+.jobs-page-heading {
+    font-size: 2.1rem;
+    color: #1f4a78;
+    margin: 0 0 1rem;
+}
+
+/* Intro note box */
+.jobs-embedded-note {
+    background-color: #edf5fb;
+    color: #1f3554;
+    padding: 1rem 1.2rem;
+    border-left: 5px solid #2b7ca8;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Aside panel */
+.jobs-side-panel {
+    float: right;
+    width: 25%;
+    margin: 0 0 1.5rem 1.5rem;
+    padding: 1.2rem;
+    border: 1px solid #c7d2e8;
+    background-color: #f7f9fe;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(31, 53, 84, 0.06);
+}
+
+/* Aside heading */
+.jobs-side-panel h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: #1f4a78;
+    font-size: 1.35rem;
+}
+
+/* Aside text and list items */
+.jobs-side-panel p,
+.jobs-side-panel li {
+    font-size: 0.98rem;
+    color: #233a59;
+}
+
+/* Aside list spacing */
+.jobs-side-panel ul {
+    margin: 0.75rem 0 0 1.2rem;
+    padding-left: 0.5rem;
+}
+
+.jobs-side-panel li {
+    margin-bottom: 0.6rem;
+}
+
+/* Job card styling */
+.jobs-listing-card {
+    width: 72%;
+    background-color: #ffffff;
+    border: 1px solid #c7d2e8;
+    border-radius: 10px;
+    padding: 1.6rem 1.7rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 2px 10px rgba(31, 53, 84, 0.06);
+}
+
+/* Job title */
+.jobs-listing-card h2 {
+    color: #1f4a78;
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d8def0;
+    padding-bottom: 0.7rem;
+}
+
+/* Inner section spacing */
+.jobs-detail-section {
+    margin-top: 1.2rem;
+}
+
+/* Inner headings */
+.jobs-detail-section h3 {
+    color: #244a73;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Paragraph styling */
+.jobs-detail-section p {
+    margin: 0.55rem 0;
+    color: #1f3554;
+    font-size: 1rem;
+}
+
+/* Ordered and unordered list styling */
+.jobs-listing-card ul,
+.jobs-listing-card ol {
+    margin: 0.75rem 0 0.9rem 1.35rem;
+    padding-left: 0.45rem;
+}
+
+.jobs-listing-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Strong text */
+.jobs-listing-card strong,
+.jobs-side-panel strong {
+    color: #18324d;
+}
+
+/* Clear floated aside */
+.jobs-clear {
+    clear: both;
+}
+
+footer {
+    background-color: #A9D6E5;
+    color: #1f3554;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+footer a {
+    color: #1f3554;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #244a73;
+}
+
+
+
+/* =========================
+   RESPONSIVE GLOBAL NAV
+   ========================= */
+
+@media screen and (max-width: 900px) {
+    #main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .site-logo {
+        width: 95px;
+        height: 95px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-header {
+        padding: 1rem 1.2rem;
+    }
+
+    .site-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 0.55rem 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main-header {
+        padding: 0.9rem 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 0.65rem 0.9rem;
+    }
+
+    .site-logo {
+        width: 75px;
+        height: 75px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .jobs-side-panel {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .jobs-listing-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #jobs-main-content {
+        padding: 2rem 1.2rem;
+    }
+
+    .jobs-page-heading {
+        font-size: 1.8rem;
+    }
+
+    .jobs-listing-card {
+        padding: 1.4rem;
+    }
+
+    .jobs-listing-card h2 {
+        font-size: 1.45rem;
+    }
+
+    .jobs-detail-section h3 {
+        font-size: 1.08rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #jobs-main-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .jobs-page-heading {
+        font-size: 1.55rem;
+    }
+
+    .jobs-embedded-note {
+        padding: 0.9rem 1rem;
+        font-size: 0.94rem;
+    }
+
+    .jobs-listing-card {
+        padding: 1.1rem;
+    }
+
+    .jobs-listing-card h2 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .jobs-side-panel {
+        padding: 1rem;
+    }
+
+    .jobs-side-panel h3 {
+        font-size: 1.2rem;
+    }
+
+    .jobs-detail-section h3 {
+        font-size: 1rem;
+    }
+}
