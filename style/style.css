@@ -322,7 +322,138 @@ footer a:hover {
     color: #244a73;
 }
 
+/* ABOUT PAGE CSS */
+#about-main-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+    background-color: #ffffff;
+    line-height: 1.75;
+    overflow: hidden;
+}
 
+.about-intro-section {
+    margin-bottom: 2rem;
+}
+
+.about-page-heading {
+    font-size: 2.1rem;
+    color: #1f4a78;
+    margin: 0 0 1rem;
+}
+
+.about-embedded-note {
+    background-color: #edf5fb;
+    color: #1f3554;
+    padding: 1rem 1.2rem;
+    border-left: 5px solid #2b7ca8;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 10px rgba(31, 53, 84, 0.06);
+}
+
+.about-side-panel {
+    float: right;
+    width: 25%;
+    margin: 0 0 1.5rem 1.5rem;
+    padding: 1.2rem;
+    border: 1px solid #c7d2e8;
+    background-color: #f7f9fe;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(31, 53, 84, 0.06);
+}
+
+.about-side-panel h3, .about-side-panel h2 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: #1f4a78;
+    font-size: 1.3rem;
+}
+
+.about-side-panel p, .about-side-panel li {
+    font-size: 0.98rem;
+    color: #233a59;
+}
+
+.about-side-panel ul {
+    margin: 0.75rem 0 1.2rem 1.2rem;
+    padding-left: 0.5rem;
+}
+
+.about-side-panel figure {
+    border: 2px solid #c7d2e8;
+    border-radius: 10px;
+    padding: 0.8rem;
+    background-color: #ffffff;
+}
+
+.about-content-card {
+    width: 72%;
+    background-color: #ffffff;
+    border: 1px solid #c7d2e8;
+    border-radius: 10px;
+    padding: 1.6rem 1.7rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0px 2px 10px rgba(31, 53, 84, 0.06);
+}
+
+.about-content-card h2 {
+    color: #1f4a78;
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d8def0;
+    padding-bottom: 0.7rem;
+}
+
+.about-content-card tr:hover {
+    background-color: #edf5fb;
+}
+
+.about-content-card p, .about-content-card dd, .about-content-card dt {
+    color: #1f3554;
+    font-size: 1rem;
+}
+
+.about-content-card dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}s
+
+.id {
+    color: #1f4a78;
+    font-weight: bold;
+}
+
+.about-team-photo {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.about-bottom-section {
+    clear: both;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #c7d2e8;
+    border-radius: 10px;
+    padding: 1.6rem 1.7rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 2px 10px rgba(31, 53, 84, 0.06);
+}
+
+.about-bottom-section h2 {
+    color: #1f4a78;
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d8def0;
+    padding-bottom: 0.7rem;
+}
+
+.about-clear {
+    clear: both;
+}
 
 /* =========================
    RESPONSIVE GLOBAL NAV
@@ -398,7 +529,18 @@ footer a:hover {
     .jobs-listing-card {
         width: 100%;
     }
+        .about-side-panel {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .about-content-card {
+        width: 100%;
+    }
 }
+
+
 
 @media screen and (max-width: 768px) {
     #jobs-main-content {
@@ -419,6 +561,22 @@ footer a:hover {
 
     .jobs-detail-section h3 {
         font-size: 1.08rem;
+    }
+      #about-main-content {
+        padding: 2rem 1.2rem;
+    }
+
+    .about-page-heading {
+        font-size: 1.8rem;
+    }
+
+    .about-content-card {
+        padding: 1.4rem;
+    }
+
+    .about-content-card h2,
+    .about-bottom-section h2 {
+        font-size: 1.45rem;
     }
 }
 
@@ -455,5 +613,30 @@ footer a:hover {
 
     .jobs-detail-section h3 {
         font-size: 1rem;
+    }
+    #about-main-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .about-page-heading {
+        font-size: 1.55rem;
+    }
+
+    .about-embedded-note {
+        padding: 0.9rem 1rem;
+        font-size: 0.94rem;
+    }
+
+    .about-content-card,
+    .about-bottom-section {
+        padding: 1.1rem;
+    }
+
+    .about-side-panel {
+        padding: 1rem;
+    }
+
+    .about-side-panel h3 {
+        font-size: 1.2rem;
     }
 }

@@ -8,85 +8,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
-    <!--styles-->
+    <!--external css-->
     <link rel="stylesheet" href="style/style.css">
-    <style>
 
+    <!--internal css-->
+    <style>
+    .about-note {
+        font-style: italic;
+    }
     </style>
 </head>
 
 <body>
     <!--site navigation-->
-     <!-- Header with logo, site title and navigation -->
-      <header id="main-header">
+    <header id="main-header">
         <div>
             <a href="index.html" class="site-logo-link">
-                    <img src="images/LOGO.png" alt="VitalCare Digital Health logo" class="site-logo">
+                <img src="images/LOGO.png" alt="VitalCare Digital Health logo" class="site-logo">
+            </a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="jobs.html">Careers</a></li>
                 <li><a href="apply.html">Join Us</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="site-nav-current">About</a></li>
             </ul>
         </nav>
     </header>
 
     <!--page content-->
-    <main>
-        <!--group name / scheduling-->
-        <section>
-            <h2>About VitalCare Digital Health</h2>
-            <ul>
-                <li>Office Hours:</li>
-                <ul>
-                    <li>Day: Tuesday</li>
-                    <li>Time: 1430 - 1630</li>
-                    <li>Room: ATC325</li>
-                </ul>
-            </ul>
+    <main id="about-main-content">
+        <!--intro section-->
+        <section class="about-intro-section">
+            <h1 class="about-page-heading">About VitalCare Digital Health</h1>
+            <p class="about-embedded-note about-note">
+                Meet our team, our contributions, and some fun facts about the people behind VitalCare Digital Health.
+            </p>
         </section>
+        <!--group name / scheduling + team photo-->
+        <aside class="about-side-panel">
+            <h2>VitalCare Digital Health</h2>
+            <ul>
+                <li>Office Hours:
+                    <ul>
+                        <li>Day: Tuesday</li>
+                        <li>Time: 1430 - 1630</li>
+                        <li>Room: ATC325</li>
+                    </ul>
+                </li>   
+            </ul>
+            <h3>Team Photo</h3>
+            <figure style="text-align: center;">
+                <img src="images/group-photo.png" alt="Photo of the team together" class="about-team-photo">
+                <figcaption>VitalCare Digital Health Team Photo</figcaption>
+            </figure>
+        </aside>
 
         <!--member contributions / quotes-->
-        <section>
+        <section class="about-content-card">
             <h2>Meet Our Team</h2>
             <dl>
-                <dt>Beatrice</dt>
-                <dd>Contribution:</dd>
-                <dd>Quote:</dd>
-                <dd>English Translation:</dd>
+                <dt><strong>Beatrice</strong></dt>
+                <dd class="id">ID: 124959530</dd>
+                <dd>Contribution: Digital Health Production Manager</dd>
+                <dd>Quote (french): "La santé n'est pas tout, mais sans la santé, tout n'est rien."</dd>
+                <dd>English Translation:  "Health is not everything, but without health, everything is nothing." </dd>
                 
-                <dt>Kaito</dt>
-                <dd>Contribution:</dd>
-                <dd>Quote:</dd>
-                <dd>English Translation:</dd>
+                <dt><strong>Kaito</strong></dt>
+                <dd class="id">ID: 124905958</dd>
+                <dd>Contribution: Software Engineer</dd>
+                <dd>Quote (japanese): "予防は治療に勝る"</dd>
+                <dd>English Translation: "Prevention is better than cure."</dd>
 
-                <dt>Suryansh</dt>
-                <dd>Contribution:</dd>
-                <dd>Quote:</dd>
-                <dd>English Translation:</dd>
+                <dt><strong>Suryansh</strong></dt>
+                <dd class="id">ID: 123450959</dd>
+                <dd>Contribution: Clinical Lead</dd>
+                <dd>Quote (russian): "Здоровье дороже золота."</dd>
+                <dd>English Translation: "Health is more precious than gold."</dd>
 
-                <dt>Flynn</dt>
-                <dd>Contribution:</dd>
-                <dd>Quote:</dd>
-                <dd>English Translation:</dd>
+                <dt><strong>Flynn</strong></dt>
+                <dd class="id">ID: 123344378</dd>
+                <dd>Contribution: Data Science</dd>
+                <dd>Quote (Greek): "Το γέλιο κάνει καλό στην υγεία."</dd>
+                <dd>English Translation: "Laughter is good for health."</dd>
             </dl>
         </section>
 
-        <!--team photo-->
-        <section>
-            <h2>Team Photo</h2>
-            <figure>
-                <img src="images/group-photo.jpg" alt="Photo of the team together" width="400">
-                <figcaption>VitalCare Digital Health Team Photo</figcaption>
-            </figure>
-        </section>
-
         <!--fun facts-->
-        <section>
+        <section class="about-content-card">
             <h2>Fun Facts</h2>
-            <table border="1">
+            <table>
                 <caption>Learn About Our Team Members</caption>
                 <tr>
                     <th>Name</th>
@@ -95,30 +107,45 @@
                     <th>Hometown</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><strong>Beatrice</strong></td>
+                    <td>Network Engineer</td>
+                    <td>Noodles</td>
+                    <td>Melbourne</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><strong>Kaito</strong></td>
+                    <td>Astronaut</td>
+                    <td>Pizza</td>
+                    <td>Brisbane</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><strong>Suryansh</strong></td>
+                    <td>CEO</td>
+                    <td>Chips</td>
+                    <td>Perth</td>
+                </tr>
+                <tr>
+                    <td><strong>Flynn</strong></td>
+                    <td>SOC Analyst</td>
+                    <td>Ice Cream</td>
+                    <td>Darwin</td>
                 </tr>
             </table>
+        </section>
+        
+        <div class="about-clear"></div>
+        <!--acknowledgement of country-->
+        <section class="about-bottom-section">
+            <h2>Acknowledgement Of Country</h2>
+            <p>
+                We respectfully acknowledge the Wurundjeri People of the Kulin Nation, who are the Traditional Owners of the land on which Swinburne’s Australian campuses are located in Melbourne’s east and outer-east, and pay our respect to their Elders past, present and emerging. We are honoured to recognise our connection to Wurundjeri Country, history, culture and spirituality through these locations, and strive to ensure that we operate in a manner that respects and honours the Elders and Ancestors of these lands. We also respectfully acknowledge Swinburne’s Aboriginal and Torres Strait Islander staff, students, alumni, partners and visitors. We also acknowledge and respect the Traditional Owners of lands across Australia, their Elders, Ancestors, cultures and heritage, and recognise the continuing sovereignties of all Aboriginal and Torres Strait Islander Nations.
+            </p>
         </section>
     </main>
 
     <!--footer-->
     <footer>
-        <p>&copy; 2026 VitalCare Digital Health. All rights reserved.</p>
+        <p  style="border-top: 2px inset black;">&copy; 2026 VitalCare Digital Health. All rights reserved.</p>
         <p>
             <a href="https://github.com/104667483/Assignment-1.git" target="_blank">GitHub Repository</a> |
             <a href="" target="_blank">Live Website</a>
