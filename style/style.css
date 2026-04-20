@@ -585,12 +585,10 @@ footer a:hover {
     }
 }
 
-<<<<<<< HEAD
 
 
-=======
+
 /* Smaller tablets */
->>>>>>> d9bcb1e1862faedb3ebdbaa41b1f360b65407c0d
 @media screen and (max-width: 768px) {
     #main-header {
         padding: 0.9rem 1.2rem;
@@ -715,32 +713,6 @@ footer a:hover {
     .jobs-detail-section h3 {
         font-size: 1rem;
     }
-<<<<<<< HEAD
-    #about-main-content {
-        padding: 1.5rem 1rem;
-    }
-
-    .about-page-heading {
-        font-size: 1.55rem;
-    }
-
-    .about-embedded-note {
-        padding: 0.9rem 1rem;
-        font-size: 0.94rem;
-    }
-
-    .about-content-card,
-    .about-bottom-section {
-        padding: 1.1rem;
-    }
-
-    .about-side-panel {
-        padding: 1rem;
-    }
-
-    .about-side-panel h3 {
-        font-size: 1.2rem;
-=======
 }
 
 /* Very small phones */
@@ -789,6 +761,5 @@ footer a:hover {
     .jobs-side-panel li {
         font-size: 0.92rem;
         line-height: 1.6;
->>>>>>> d9bcb1e1862faedb3ebdbaa41b1f360b65407c0d
     }
 }
