@@ -125,8 +125,8 @@ button {
 
 /*Image*/
 .index-img-container {
-        width: 130%;
-        margin-left: -15%;
+        width: 125%;
+        margin-left: -12.5%;
         height: 50vh;
         overflow: hidden;
         position: relative;
