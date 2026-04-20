@@ -15,10 +15,13 @@ Text: #1F2937 — strong readability
 Success/highlight: #52B788 — health/growth*/
 * {
     box-sizing: border-box;
-}
-* {
-    line-height: 2;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 #main-header {
@@ -353,9 +356,10 @@ footer a:hover {
 
 
 /* =========================
-   RESPONSIVE GLOBAL NAV
+   RESPONSIVE GLOBAL NAV + JOBS
    ========================= */
 
+/* Tablet and below */
 @media screen and (max-width: 900px) {
     #main-header {
         flex-direction: column;
@@ -371,52 +375,14 @@ footer a:hover {
     nav ul {
         flex-wrap: wrap;
         justify-content: flex-start;
+        gap: 0.6rem;
     }
 
     .site-logo {
         width: 95px;
         height: 95px;
     }
-}
 
-@media screen and (max-width: 768px) {
-    #main-header {
-        padding: 1rem 1.2rem;
-    }
-
-    .site-logo {
-        width: 85px;
-        height: 85px;
-    }
-
-    nav a {
-        font-size: 0.95rem;
-        padding: 0.55rem 0.9rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #main-header {
-        padding: 0.9rem 1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.6rem;
-    }
-
-    nav a {
-        width: 100%;
-        padding: 0.65rem 0.9rem;
-    }
-
-    .site-logo {
-        width: 75px;
-        height: 75px;
-    }
-}
-@media screen and (max-width: 900px) {
     .jobs-side-panel {
         float: none;
         width: 100%;
@@ -428,7 +394,22 @@ footer a:hover {
     }
 }
 
+/* Smaller tablets */
 @media screen and (max-width: 768px) {
+    #main-header {
+        padding: 0.9rem 1.2rem;
+    }
+
+    .site-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.85rem;
+    }
+
     #jobs-main-content {
         padding: 2rem 1.2rem;
     }
@@ -438,7 +419,7 @@ footer a:hover {
     }
 
     .jobs-listing-card {
-        padding: 1.4rem;
+        padding: 1.3rem;
     }
 
     .jobs-listing-card h2 {
@@ -450,9 +431,46 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
+/* Phones */
+@media screen and (max-width: 600px) {
+    #main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .site-logo-link {
+        justify-content: center;
+    }
+
+    .site-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 220px;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
     #jobs-main-content {
-        padding: 1.5rem 1rem;
+        padding: 1.4rem 1rem;
     }
 
     .jobs-page-heading {
@@ -460,28 +478,78 @@ footer a:hover {
     }
 
     .jobs-embedded-note {
-        padding: 0.9rem 1rem;
-        font-size: 0.94rem;
+        padding: 0.85rem 0.95rem;
+        font-size: 0.92rem;
+        margin-bottom: 1.2rem;
     }
 
     .jobs-listing-card {
-        padding: 1.1rem;
+        padding: 1rem;
     }
 
     .jobs-listing-card h2 {
         font-size: 1.25rem;
-        line-height: 1.4;
+        line-height: 1.35;
     }
 
     .jobs-side-panel {
-        padding: 1rem;
+        padding: 0.95rem;
     }
 
     .jobs-side-panel h3 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     .jobs-detail-section h3 {
         font-size: 1rem;
+    }
+}
+
+/* Very small phones */
+@media screen and (max-width: 480px) {
+    #main-header {
+        padding: 0.75rem 0.9rem;
+    }
+
+    .site-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    nav a {
+        max-width: 200px;
+        font-size: 0.88rem;
+    }
+
+    #jobs-main-content {
+        padding: 1.2rem 0.9rem;
+    }
+
+    .jobs-page-heading {
+        font-size: 1.4rem;
+    }
+
+    .jobs-embedded-note {
+        font-size: 0.9rem;
+    }
+
+    .jobs-listing-card {
+        padding: 0.95rem;
+    }
+
+    .jobs-listing-card h2 {
+        font-size: 1.15rem;
+    }
+
+    .jobs-side-panel h3 {
+        font-size: 1.05rem;
+    }
+
+    .jobs-detail-section p,
+    .jobs-listing-card li,
+    .jobs-side-panel p,
+    .jobs-side-panel li {
+        font-size: 0.92rem;
+        line-height: 1.6;
     }
 }
